@@ -1,0 +1,101 @@
+/* Styling the overall layout of the login page */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #f4f4f4; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centering horizontally */
+    align-items: center; 
+    height: 100vh; /* Using full viewport height */
+  }
+
+/* Styling the container holding the login form */
+.login-container {
+    background-color:#fff; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: #007bff;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+    width: 300px; 
+    max-width: 100%; /* Allowing the container to be responsive */
+    text-align: center; 
+  }
+
+/* Styling the heading of the login form */
+.login-container h2 {
+    margin-bottom: 20px; 
+    color: #333; 
+  }
+
+/* Styling input groups (each form field with its label) */
+.input-group {
+    margin-bottom: 20px; 
+    position: relative; /* Setting position relative for positioning labels */
+  }
+
+/* Styling input fields */
+.input-group input {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    outline: none; /* Removing outline */
+  }
+
+/* Styling labels for input fields */
+.input-group label {
+    position: absolute; 
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); /* Centering labels vertically */
+    background-color:#fff; 
+    padding: 0 5px; 
+    color: #999; 
+    pointer-events: none; 
+    transition: 0.3s; 
+  }
+
+/* Styling labels when input fields are focused or have content */
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: 0; 
+    transform: translateY(0); /* Centering labels vertically */
+    font-size: 12px; 
+    color: #007bff; 
+  }
+
+/* Styling the submit button */
+.login-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff; 
+    border: none; /* Removing border */
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; /* Changing cursor to pointer */
+    transition: background-color 0.3s; /* Adding transition effect */
+  }
+
+/* Styling the submit button on hover */
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Changing background color on hover */
+  }
+
+/* Styling additional text or links */
+.login-container p {
+    margin-top: 15px; 
+    color: #888; 
+    font-size: 14px;
+  }
+
+/* Styling links within additional text */
+.login-container p a {
+    color: #007bff; 
+    text-decoration: none; 
+  }
+
+/* Styling links within additional text on hover */
+.login-container p a:hover {
+    text-decoration: underline; 
+  }
