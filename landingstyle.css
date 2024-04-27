@@ -1,0 +1,519 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*nav bar*/
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+/* Search Bar Styles */
+#search {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#search-btn{
+    background-color: #45a049;
+    padding: 5px 5px;
+    border: none;
+}
+
+#searchInput {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* 
+/* Slider Styles */
+
+.slider-container {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .slider-button.prev {
+    left: 0;
+  }
+  
+  .slider-button.next {
+    right: 0;
+  }
+  
+
+/* Explore Section */
+.explore-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination {
+    flex: 1 0 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.destination-content {
+    padding: 20px;
+}
+
+.destination-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.destination-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    
+}
+
+.btn-details:hover {
+    background-color: #0056b3;
+}
+
+.see-more {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color:#007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+
+.see-more:hover {
+    color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 1200px) {
+    .destination {
+        flex: 1 0 calc(33.333% - 20px); /* Three destinations per row on medium screens */
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .destination {
+        flex: 1 0 calc(50% - 20px); /* Two destinations per row on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .destination {
+        flex: 1 0 100%; /* Each destination occupies full width on extra small screens */
+        max-width: 100%;
+    }
+}
+/*book guide styles*/
+
+  
+
+.book-guides-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.guide-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.guide {
+    flex: 1 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.guide:hover {
+    transform: translateY(-5px);
+}
+
+.guide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.guide-details {
+    padding: 20px;
+}
+
+.guide-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.guide-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.guide-contact {
+    color: #007bff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .guide {
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .guide {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/*about us*/
+
+
+.container-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Us section styles */
+.about-section {
+    background-color:antiquewhite;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.about-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-section img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+.see-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        float: none;
+    }
+}
+
+
+
+/*review section*/
+.container-review {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Review section styles */
+.review-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.review-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-groupe {
+    margin-bottom: 20px;
+}
+
+.form-groupe label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-groupe input[type="text"],
+.form-groupe textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-groupe textarea {
+    height: 100px;
+}
+
+.form-groupe button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-groupe button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .review-section {
+        padding: 30px;
+    }
+
+    .review-form {
+        padding: 0 20px;
+    }
+
+    .form-groupe input[type="text"],
+    .form-group textarea {
+        width: 100%;
+    }
+}
+/*contact section*/
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#statusMessage {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
